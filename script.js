@@ -75,16 +75,17 @@ document.addEventListener("DOMContentLoaded", function(){
             div_number.classList.remove('red');//.redを消す
         }
         grid = Math.floor(Math.random()*100);
-        if(grid<100){
+        tmp = grid
+        if(tmp<100){
             grid = 0
         }
-        if(grid<90){
+        if(tmp<90){
             grid = 2
         }
-        if(grid<80){
+        if(tmp<80){
             grid = 1
         }
-        
+        console.log(grid);
         number = num[grid];//.redをつけるためのランダムな数字を選択
         if(number == "も"){
             number = 0
